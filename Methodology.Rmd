@@ -1,0 +1,30 @@
+---
+title: "Text Mining Week 1"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This is a step by step account of the practical work undertaken for KCL Text Mining module week 1.
+
+## Preparing data
+
+Firstly I downloaded the data tables for each year of the E-Participation Index from https://publicadministration.un.org/egovkb/Data-Center 
+
+I then used UN lookup reference material to manually add a 'region' variable column to the 2022 index data.
+
+I wrote a function to combine all the downloaded csv files into a single data frame, and then joined this with the data frame containing the region variable.
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
